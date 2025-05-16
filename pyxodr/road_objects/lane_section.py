@@ -1,4 +1,5 @@
 from typing import Dict, List, Optional, Set, Tuple
+import logging
 
 import numpy as np
 from lxml import etree
@@ -11,6 +12,8 @@ from pyxodr.road_objects.lane import (
     TrafficOrientation,
 )
 from pyxodr.utils import cached_property
+
+logger = logging.getLogger(__name__)
 
 
 class LaneSection:
@@ -252,12 +255,13 @@ class LaneSection:
                     except KeyError as e:
                         if predecessor_id in predecessor_lane_section.ignored_lane_ids:
                             continue
-                        raise KeyError(
-                            f"Raised by lane {lane.id}, lane section "
+                        logger.warning(
+                            f"WARNING: Lane linking error raised by lane {lane.id}, lane section "
                             + f"{self.lane_section_ordinal} in "
                             + f"road {self.road_id}: "
                             + str(e)
                         )
+                        continue
                     lane.predecessor_data.append(
                         (predecessor_lane_obj, predecessor_connection_position)
                     )
@@ -284,12 +288,13 @@ class LaneSection:
                     except KeyError as e:
                         if successor_id in successor_lane_section.ignored_lane_ids:
                             continue
-                        raise KeyError(
-                            f"Raised by lane {lane.id}, lane section "
+                        logger.warning(
+                            f"WARNING: Lane linking error raised by lane {lane.id}, lane section "
                             + f"{self.lane_section_ordinal} in "
                             + f"road {self.road_id}: "
                             + str(e)
                         )
+                        continue
                     lane.successor_data.append(
                         (successor_lane_obj, successor_connection_position)
                     )
