@@ -9,9 +9,9 @@ dev = ["pytest>=7.1.3"]
 enabled = true
 
 [project]
-name = "pyxodr"
+name = "pyxodr-omega-prime"
 authors = [
-    { name="Hugh Blayney", email="hugh@drisk.ai" },
+    { name="Stamatis Chrysanthidis", email="stamchry@gmail.com" },
 ]
 description="Read OpenDRIVE files."
 readme = "README.md"
@@ -32,7 +32,7 @@ dependencies = [
 dynamic = ["version"]
 
 [tool.setuptools.packages.find]
-include = ["pyxodr", "pyxodr.*"]
+include = ["pyxodr_omega_prime", "pyxodr_omega_prime.*"]
 
 [project.urls]
-"Homepage" = "https://github.com/driskai/pyxodr"
+"Homepage" = "https://github.com/stamchry/pyxodr/tree/omega-prime"

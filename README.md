@@ -1,4 +1,8 @@
-# pyxodr
+# pyxodr-omega-prime
+
+This is a fork from [pyxodr](https://github.com/driskai/pyxodr) created for use in [omega-prime](https://github.com/ika-rwth-aachen/omega-prime)
+
+Included there are fixes based on the [handle-exceptions](https://github.com/driskai/pyxodr/tree/handle-exceptions) branch with modifications for our purposes.
 
 ![Tests](https://github.com/driskai/pyxodr/actions/workflows/tests.yml/badge.svg)
 ![Python 3.7+](https://img.shields.io/badge/python-3.7+-brightgreen)
@@ -18,7 +22,7 @@ This class structure implements an API which should act as a middle layer betwee
 ## Installation
 Install with `pip`:
 ```bash
-pip install pyxodr
+pip install pyxodr-omega-prime
 ```
 
 ## Testing
