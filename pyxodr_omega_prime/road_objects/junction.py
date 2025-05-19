@@ -3,8 +3,8 @@ from typing import Dict, List, Set
 import numpy as np
 from lxml import etree
 
-from pyxodr.road_objects.road import Road
-from pyxodr.utils import cached_property
+from pyxodr_omega_prime.road_objects.road import Road
+from pyxodr_omega_prime.utils import cached_property
 
 
 class Junction:

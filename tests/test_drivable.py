@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pytest as pt
 
-from pyxodr.road_objects.network import RoadNetwork
+from pyxodr_omega_prime.road_objects.network import RoadNetwork
 from tests.example_xodr_files import example_xodr_file_paths
 
 lane_types_to_be_ignored = [None, set(["sidewalk", "shoulder"]), set(["driving"])]

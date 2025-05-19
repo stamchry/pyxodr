@@ -6,10 +6,10 @@ from lxml import etree
 from rich import print
 from rich.progress import track
 
-from pyxodr.road_objects.junction import Junction
-from pyxodr.road_objects.lane import ConnectionPosition
-from pyxodr.road_objects.road import Road
-from pyxodr.utils import cached_property
+from pyxodr_omega_prime.road_objects.junction import Junction
+from pyxodr_omega_prime.road_objects.lane import ConnectionPosition
+from pyxodr_omega_prime.road_objects.road import Road
+from pyxodr_omega_prime.utils import cached_property
 
 
 class RoadNetwork:

@@ -5,13 +5,13 @@ import numpy as np
 from lxml import etree
 from shapely.geometry import Polygon
 
-from pyxodr.road_objects.lane import (
+from pyxodr_omega_prime.road_objects.lane import (
     ConnectionPosition,
     Lane,
     LaneOrientation,
     TrafficOrientation,
 )
-from pyxodr.utils import cached_property
+from pyxodr_omega_prime.utils import cached_property
 
 logger = logging.getLogger(__name__)
 

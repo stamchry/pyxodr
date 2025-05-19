@@ -1,6 +1,6 @@
 import numpy as np
 
-from pyxodr.geometries.base import Geometry
+from pyxodr_omega_prime.geometries.base import Geometry
 
 
 class Arc(Geometry):

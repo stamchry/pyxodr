@@ -3,7 +3,7 @@ from typing import List
 
 import numpy as np
 
-from pyxodr.geometries.base import Geometry, NullGeometry
+from pyxodr_omega_prime.geometries.base import Geometry, NullGeometry
 
 
 class MultiGeom:

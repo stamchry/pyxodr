@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 
 import numpy as np
 
-from pyxodr.utils.array import fix_zero_directions
+from pyxodr_omega_prime.utils.array import fix_zero_directions
 
 
 class Geometry(ABC):

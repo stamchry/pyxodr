@@ -1,7 +1,7 @@
 import numpy as np
 
-from pyxodr.geometries._standard_spiral import OdrSpiral
-from pyxodr.geometries.base import Geometry
+from pyxodr_omega_prime.geometries._standard_spiral import OdrSpiral
+from pyxodr_omega_prime.geometries.base import Geometry
 
 
 class Spiral(Geometry):

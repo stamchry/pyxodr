@@ -3,7 +3,7 @@ from typing import Optional
 import numpy as np
 from scipy.integrate import solve_ivp
 
-from pyxodr.geometries.base import Geometry
+from pyxodr_omega_prime.geometries.base import Geometry
 
 
 class CubicPolynom(Geometry):

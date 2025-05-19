@@ -5,12 +5,12 @@ import numpy as np
 from lxml import etree
 from shapely.geometry import Polygon
 
-from pyxodr.geometries import Arc, CubicPolynom, MultiGeom, ParamCubicPolynom, Spiral
-from pyxodr.road_objects.lane import ConnectionPosition, TrafficOrientation
-from pyxodr.road_objects.lane_section import LaneSection
-from pyxodr.utils import cached_property
-from pyxodr.utils.array import interpolate_path
-from pyxodr.utils.curved_text import CurvedText
+from pyxodr_omega_prime.geometries import Arc, CubicPolynom, MultiGeom, ParamCubicPolynom, Spiral
+from pyxodr_omega_prime.road_objects.lane import ConnectionPosition, TrafficOrientation
+from pyxodr_omega_prime.road_objects.lane_section import LaneSection
+from pyxodr_omega_prime.utils import cached_property
+from pyxodr_omega_prime.utils.array import interpolate_path
+from pyxodr_omega_prime.utils.curved_text import CurvedText
 
 
 class Road:

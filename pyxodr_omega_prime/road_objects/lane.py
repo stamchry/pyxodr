@@ -12,8 +12,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 from lxml import etree
 
-from pyxodr.geometries import CubicPolynom, MultiGeom
-from pyxodr.utils import CurvedText, cached_property
+from pyxodr_omega_prime.geometries import CubicPolynom, MultiGeom
+from pyxodr_omega_prime.utils import CurvedText, cached_property
 
 
 class LaneOrientation(Enum):
